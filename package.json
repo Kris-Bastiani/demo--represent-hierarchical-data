@@ -1,0 +1,14 @@
+{
+	"name": "momenton--kris-bastiani",
+	"version": "0.1.0",
+	"description": "Technical test for Momenton",
+	"main": "index.js",
+	"scripts": {
+		"create": "lerna create"
+	},
+	"author": "Kris Bastiani",
+	"license": "ISC",
+	"devDependencies": {
+		"lerna": "^3.21.0"
+	}
+}

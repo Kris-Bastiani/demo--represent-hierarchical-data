@@ -1,0 +1,19 @@
+{
+	"name": "frontend",
+	"version": "0.1.0",
+	"description": "Front-end of Momenton technical test",
+	"author": "Kris Bastiani <kris.bastiani@gmail.com>",
+	"homepage": "",
+	"license": "ISC",
+	"main": "lib/frontend.js",
+	"directories": {
+		"lib": "lib",
+		"test": "__tests__"
+	},
+	"files": [
+		"lib"
+	],
+	"scripts": {
+		"test": "echo \"Error: run tests from root\" && exit 1"
+	}
+}
