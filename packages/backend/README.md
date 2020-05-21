@@ -18,3 +18,8 @@ to populate the database quickly and easily.
 - Once done, run `npm start` to start the server on port 3002
 
 ## Limitations
+
+Due to my back-end skills being less mature than my front-end skills,
+I do not yet know good techniques for testing request handlers and such.
+As a result, back-end test coverage is unfortunately lacking.
+I'm particularly eager to improve on this to fill these knowledge gaps.
