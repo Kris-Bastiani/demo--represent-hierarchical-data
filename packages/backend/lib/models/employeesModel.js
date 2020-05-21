@@ -4,9 +4,9 @@ const { Schema } = mongoose;
 
 const EmployeeSchema = new Schema(
 	{
-		id: { type: Number },
-		managerId: { type: Number },
-		name: { type: String },
+		ID: { type: Number },
+		'Manager ID': { type: Number },
+		'Employee Name': { type: String },
 	},
 	{ collection: 'employees' },
 );
