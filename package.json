@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"add": "lerna add",
+		"bootstrap": "lerna bootstrap",
 		"create": "lerna create"
 	},
 	"author": "Kris Bastiani",
