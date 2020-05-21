@@ -6,7 +6,8 @@
 	"scripts": {
 		"add": "lerna add",
 		"bootstrap": "lerna bootstrap",
-		"create": "lerna create"
+		"create": "lerna create",
+		"seed": "npx -p node-mongo-seeds seed"
 	},
 	"author": "Kris Bastiani",
 	"license": "ISC",
