@@ -34,6 +34,7 @@ module.exports = {
 	rules: {
 		'arrow-parens': ['error', 'as-needed'],
 		'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+		indent: ['error', 'tab'],
 		'jsx-quotes': ['error', 'prefer-single'],
 		'no-mixed-operators': [
 			'error',
@@ -54,7 +55,7 @@ module.exports = {
 				maxEOF: 1,
 			},
 		],
-		'no-tabs': 0,
+		'no-tabs': ['error', { allowIndentationTabs: true }],
 		'no-unused-expressions': ['error', {
 			allowShortCircuit: true,
 			allowTernary: true,
