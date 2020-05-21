@@ -10,7 +10,7 @@ const routes = require('./routes/employeesRoutes');
 const PORT = process.env.PORT || 3002;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/Employeedb');
+mongoose.connect('mongodb://localhost/momenton_test__kris_bastiani');
 
 const app = express();
 app.use(helmet());
