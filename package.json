@@ -28,7 +28,10 @@
 		"eslint-plugin-security": "^1.4.0",
 		"jest": "^26.0.1",
 		"lerna": "^3.21.0",
+		"supertest": "^4.0.2",
 		"typescript": "^3.9.3"
 	},
-	"jest": { "collectCoverage": true }
+	"jest": {
+		"collectCoverage": true
+	}
 }
