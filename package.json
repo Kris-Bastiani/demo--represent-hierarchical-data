@@ -4,6 +4,7 @@
 	"description": "Technical test for Momenton",
 	"main": "index.js",
 	"scripts": {
+		"add": "lerna add",
 		"create": "lerna create"
 	},
 	"author": "Kris Bastiani",
