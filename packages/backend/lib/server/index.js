@@ -15,7 +15,7 @@ server.use(helmet());
 server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
 server.use(cors({
-	origin: 'http://localhost:3000',
+	origin: 'http://localhost:1234',
 	optionsSuccessStatus: 200,
 }));
 
