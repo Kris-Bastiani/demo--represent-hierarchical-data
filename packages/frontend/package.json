@@ -18,11 +18,34 @@
 		"start": "parcel src/index.pug"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.9.6",
+		"@babel/plugin-transform-object-assign": "^7.8.3",
+		"@babel/plugin-transform-react-jsx": "^7.9.4",
+		"@babel/preset-env": "^7.9.6",
 		"parcel-bundler": "^1.12.4",
 		"pug": "^2.0.4"
 	},
 	"dependencies": {
 		"axios": "^0.19.2",
-		"preact": "^10.4.4"
+		"core-js": "^3.6.5",
+		"preact": "^10.4.4",
+		"regenerator-runtime": "^0.13.5"
+	},
+	"engines": {
+		"node": "^12.16.3"
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-env"
+		],
+		"plugins": [
+			"@babel/plugin-transform-object-assign",
+			[
+				"@babel/plugin-transform-react-jsx",
+				{
+					"pragma": "h"
+				}
+			]
+		]
 	}
 }
