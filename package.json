@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"add": "lerna add",
+		"add:dev": "lerna add --dev",
 		"bootstrap": "lerna bootstrap",
 		"create": "lerna create",
 		"seed": "npx -p node-mongo-seeds seed",
