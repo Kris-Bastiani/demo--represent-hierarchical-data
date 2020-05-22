@@ -20,5 +20,8 @@
 	"devDependencies": {
 		"parcel-bundler": "^1.12.4",
 		"pug": "^2.0.4"
+	},
+	"dependencies": {
+		"preact": "^10.4.4"
 	}
 }
