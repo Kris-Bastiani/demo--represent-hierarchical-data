@@ -1,7 +1,7 @@
 {
-	"name": "momenton--kris-bastiani",
+	"name": "demo--represent-heirarchical-data",
 	"version": "0.1.0",
-	"description": "Technical test for Momenton",
+	"description": "Demo requesting from MongoDB via a Node back-end, to be shown in UI",
 	"main": "index.js",
 	"scripts": {
 		"add": "lerna add",

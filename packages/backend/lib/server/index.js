@@ -7,8 +7,14 @@ const mongoose = require('mongoose');
 const Employee = require('../models/employeesModel'); // eslint-disable-line no-unused-vars
 const routes = require('../routes/employeesRoutes');
 
+const mongooseOptions = {
+	useNewUrlParser: true,
+	useUnifiedTopology: true,
+};
+
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/momenton_test__kris_bastiani');
+mongoose.connect('mongodb://localhost/demo--represent-heirarchical-data', mongooseOptions)
+	.catch(console.error);
 
 const server = express();
 server.use(helmet());

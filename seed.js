@@ -1,4 +1,4 @@
-const DB_PATH = 'localhost/momenton_test__kris_bastiani';
+const DB_PATH = 'localhost/demo--represent-heirarchical-data';
 
 module.exports = {
 	undefined: DB_PATH,
