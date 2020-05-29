@@ -12,7 +12,6 @@ const mongooseOptions = {
 	useUnifiedTopology: true,
 };
 
-mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/demo--represent-heirarchical-data', mongooseOptions);
 
 const db = mongoose.connection;
