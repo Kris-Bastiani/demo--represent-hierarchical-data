@@ -15,8 +15,11 @@ const Employee = mongoose.model('Employees');
 
 exports.getEmployees = (request, response) => {
 	const { readyState } = mongoose.connection;
-	// eslint-disable-next-line security/detect-object-injection
-	if (readyState !== 1) throw new Error(`Failed to connect to MongoDB (readyState: ${READY_STATES[readyState]})`);
+
+	if (![1, 2].includes(readyState)) {
+		// eslint-disable-next-line security/detect-object-injection
+		throw new Error(`Failed to connect to MongoDB (readyState: ${READY_STATES[readyState]})`);
+	}
 
 	return Employee.find(
 		{},
