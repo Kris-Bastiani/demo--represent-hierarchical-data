@@ -2,22 +2,12 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const express = require('express');
 const helmet = require('helmet');
-const mongoose = require('mongoose');
 
+const { createDbConnection } = require('../helpers/dbConnectionHandler');
 const Employee = require('../models/employeesModel'); // eslint-disable-line no-unused-vars
 const routes = require('../routes/employeesRoutes');
 
-const mongooseOptions = {
-	useNewUrlParser: true,
-	useUnifiedTopology: true,
-};
-
-mongoose.connect('mongodb://localhost/demo--represent-heirarchical-data', mongooseOptions);
-
-const db = mongoose.connection;
-
-db.on('error', console.error.bind(console, 'connection error:'));
-db.on('disconnected', console.error.bind(console, 'database disconnected:'));
+createDbConnection();
 
 const server = express();
 server.use(helmet());
