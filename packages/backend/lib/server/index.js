@@ -18,6 +18,7 @@ mongoose.connect('mongodb://localhost/demo--represent-heirarchical-data', mongoo
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
+db.on('disconnected', console.error.bind(console, 'database disconnected:'));
 
 const server = express();
 server.use(helmet());
