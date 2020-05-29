@@ -13,8 +13,11 @@ const mongooseOptions = {
 };
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/demo--represent-heirarchical-data', mongooseOptions)
-	.catch(console.error);
+mongoose.connect('mongodb://localhost/demo--represent-heirarchical-data', mongooseOptions);
+
+const db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'connection error:'));
 
 const server = express();
 server.use(helmet());
