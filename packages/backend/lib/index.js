@@ -1,5 +1,7 @@
-const server = require('./server');
+const { createDbConnection } = require('./helpers/dbConnectionHandler');
+const createExpressServer = require('./helpers/createExpressServer');
 
 const PORT = process.env.PORT || 3002;
 
-server.listen(PORT);
+createDbConnection();
+createExpressServer().listen(PORT);

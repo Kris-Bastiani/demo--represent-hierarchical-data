@@ -1,5 +1,9 @@
 const request = require('supertest');
-const server = require('../lib/server');
+const { createDbConnection } = require('../lib/helpers/dbConnectionHandler');
+const createExpressServer = require('../lib/helpers/createExpressServer');
+
+createDbConnection();
+const server = createExpressServer();
 
 // TODO: troubleshoot this error:
 // A worker process has failed to exit gracefully and has been force exited.
