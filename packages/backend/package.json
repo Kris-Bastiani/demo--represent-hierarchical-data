@@ -1,7 +1,7 @@
 {
 	"name": "backend",
 	"version": "0.1.0",
-	"description": "Back-end component of demo--represent-heirarchical-data",
+	"description": "Back-end component of demo--represent-hierarchical-data",
 	"author": "Kris Bastiani <kris.bastiani@gmail.com>",
 	"homepage": "",
 	"license": "ISC",

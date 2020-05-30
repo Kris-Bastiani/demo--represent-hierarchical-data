@@ -1,4 +1,4 @@
-# Demo: Represent heirarchical data (Back-end)
+# Demo: Represent hierarchical data (Back-end)
 
 ## Dependencies
 

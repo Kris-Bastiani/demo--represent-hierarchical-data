@@ -1,4 +1,4 @@
-const DB_PATH = 'localhost/demo--represent-heirarchical-data';
+const DB_PATH = 'localhost/demo--represent-hierarchical-data';
 
 module.exports = {
 	undefined: DB_PATH,

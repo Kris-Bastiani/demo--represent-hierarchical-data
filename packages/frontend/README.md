@@ -1,1 +1,1 @@
-# Demo: Represent heirarchical data (Front-end)
+# Demo: Represent hierarchical data (Front-end)

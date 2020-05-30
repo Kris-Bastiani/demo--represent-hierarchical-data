@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-const DB_URI = 'mongodb://localhost/demo--represent-heirarchical-data';
+const DB_URI = 'mongodb://localhost/demo--represent-hierarchical-data';
 
 const options = {
 	useNewUrlParser: true,
