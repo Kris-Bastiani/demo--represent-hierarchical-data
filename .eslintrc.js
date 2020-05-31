@@ -31,6 +31,9 @@ module.exports = {
 		'react',
 		'security',
 	],
+	react: {
+		pragma: 'h',
+	},
 	rules: {
 		'arrow-parens': ['error', 'as-needed'],
 		'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
