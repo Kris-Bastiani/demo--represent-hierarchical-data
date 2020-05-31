@@ -31,9 +31,6 @@ module.exports = {
 		'react',
 		'security',
 	],
-	react: {
-		pragma: 'h',
-	},
 	rules: {
 		'arrow-parens': ['error', 'as-needed'],
 		'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
@@ -66,6 +63,9 @@ module.exports = {
 		'security/detect-object-injection': 0,
 	},
 	settings: {
-		react: { version: 'detect' },
+		react: {
+			pragma: 'h',
+			version: 'detect',
+		},
 	},
 };
