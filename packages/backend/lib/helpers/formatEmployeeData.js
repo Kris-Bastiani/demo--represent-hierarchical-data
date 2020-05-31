@@ -8,7 +8,7 @@ module.exports = data => {
 	}));
 
 	const invalidManagers = findInvalidParents(formattedData, 'managerId');
-	if (invalidManagers.length) console.error('Employees found with invalid managers:', invalidManagers);
+	if (invalidManagers.length) throw new Error(`${invalidManagers.length} employees found with invalid managers.`);
 
 	return formattedData;
 };
