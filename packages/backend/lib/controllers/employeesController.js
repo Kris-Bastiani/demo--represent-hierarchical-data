@@ -17,7 +17,6 @@ exports.getEmployees = (request, response) => {
 	const { readyState } = mongoose.connection;
 
 	if (![1, 2].includes(readyState)) {
-		// eslint-disable-next-line security/detect-object-injection
 		throw new Error(`Failed to connect to MongoDB (readyState: ${READY_STATES[readyState]})`);
 	}
 

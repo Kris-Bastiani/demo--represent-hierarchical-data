@@ -60,6 +60,7 @@ module.exports = {
 			allowShortCircuit: true,
 			allowTernary: true,
 		}],
+		'security/detect-object-injection': 0,
 	},
 	settings: {
 		react: { version: 'detect' },
