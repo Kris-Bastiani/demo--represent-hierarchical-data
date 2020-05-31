@@ -9,7 +9,7 @@
 		"bootstrap": "lerna bootstrap",
 		"create": "lerna create",
 		"seed": "npx -p node-mongo-seeds seed",
-		"test": "jest"
+		"test": "lerna run test"
 	},
 	"author": "Kris Bastiani",
 	"license": "ISC",
@@ -31,11 +31,5 @@
 		"lerna": "^3.21.0",
 		"supertest": "^4.0.2",
 		"typescript": "^3.9.3"
-	},
-	"jest": {
-		"collectCoverage": true,
-		"projects": [
-			"packages/backend/jest.config.js"
-		]
 	}
 }
