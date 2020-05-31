@@ -60,6 +60,7 @@ module.exports = {
 			allowShortCircuit: true,
 			allowTernary: true,
 		}],
+		'react/prop-types': 0,
 		'security/detect-object-injection': 0,
 	},
 	settings: {
