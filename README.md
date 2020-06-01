@@ -2,7 +2,7 @@
 
 A basic end-to-end system consisting of a MongoDB database, a Node back-end built with Express and Mongoose, and a front-end using (very rudimentary) Preact. Testing is done via Jest.
 
-This is built as a monorepo with [Lerna](https://github.com/lerna/lerna) for the sake of keeping the project together while maintining appropriate separation of concerns.
+This is built as a monorepo with [Lerna](https://github.com/lerna/lerna) for the sake of keeping the project together while maintaining appropriate separation of concerns.
 
 The use of [`node-mongo-seeds`](https://github.com/toymachiner62/node-mongo-seeds) has also been employed to populate the database quickly and easily.
 
