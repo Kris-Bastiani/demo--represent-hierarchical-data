@@ -33,6 +33,17 @@ This project also relies on MongoDB v4 (version at the time of writing is 4.2.6)
 - Open a new terminal instance and `cd` into the project's `packages/frontend` directory
 - In this terminal instance, run `npm start` to serve the front-end at `http://localhost:1234`
 
+## Database cleanup
+
+To remove this project's database and clean up your local MongoDB once you're done:
+
+- Open a new terminal instance and run `mongod` to start the MongoDB service (if it's not already running)
+- Open a new terminal instance and run `mongo` to start the MongoDB shell
+- **Optional:** Run `show dbs` to show a list of databases that exist in MongoDB
+- Run `use demo--represent-hierarchical-data` to switch to the database for this project
+- Run `db.dropDatabase()` to drop the database currently in use
+- **Optional:** Run `show dbs` to show a list of databases that exist in MongoDB and confirm the relevant database is now gone
+
 ## Testing
 
 In a terminal instance pointed at the project's root directory, run `npm test` to run all tests across the font and back ends, and receive a coverage report for each.
