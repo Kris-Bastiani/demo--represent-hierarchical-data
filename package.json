@@ -1,7 +1,7 @@
 {
 	"name": "demo--represent-hierarchical-data",
 	"version": "0.1.0",
-	"description": "Demo requesting from MongoDB via a Node back-end, to be shown in UI",
+	"description": "A basic end-to-end system consisting of a MongoDB database, a Node back-end built with Express and Mongoose, and a front-end using (very rudimentary) Preact",
 	"main": "index.js",
 	"scripts": {
 		"add": "lerna add",
